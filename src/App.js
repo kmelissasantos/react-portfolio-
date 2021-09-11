@@ -1,23 +1,53 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import About from './Pages/About/about';
+import Contact from './Pages/Contact/contact';
+import Nav from './Components/Nav/nav';
+
+
+// function App() {
+//   return (
+//     <>
+//       <Nav />
+//       <Contact />
+//     </>
+//   );
+// }
+
+// export default App;
+
 
 function App() {
+  const [categories] = useState([
+    {
+      name: 'about'
+    },
+    { name: 'work'},
+    { name: 'contact' },
+    { name: 'resume' },
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  console.log('current Category', currentCategory);
+
+  const renderDifferentPages = () => {
+
+  } 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav
+        setCurrentCategory={setCurrentCategory}
+      ></Nav>
+      <main>
+        {currentCategory === 'about' ? (
+          <>
+            <About></About>
+          </>
+        ) : (
+          <Contact></Contact>
+        )}
+      </main>
     </div>
   );
 }
