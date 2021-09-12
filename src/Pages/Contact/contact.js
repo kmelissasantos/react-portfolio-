@@ -1,11 +1,12 @@
 import React from 'react';
 
-function Contact () {
+export default function Contact () {
     return (
         <div>
-            <h1>Contact Me</h1>
+            <h1>Contact Me using one of the options below!</h1>
+            <p> 
+                
+            </p>
         </div>
     )
 }
-
-export default Contact;

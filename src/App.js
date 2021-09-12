@@ -3,6 +3,9 @@ import './App.css';
 import About from './Pages/About/about';
 import Contact from './Pages/Contact/contact';
 import Nav from './Components/Nav/nav';
+import Portfolio from './Pages/Portfolio/portfolio';
+import Resume from './Pages/Resume/resume';
+import Footer from './Components/Footer/footer.js';
 
 
 // function App() {
@@ -19,9 +22,7 @@ import Nav from './Components/Nav/nav';
 
 function App() {
   const [categories] = useState([
-    {
-      name: 'about'
-    },
+    { name: 'about'},
     { name: 'work'},
     { name: 'contact' },
     { name: 'resume' },
@@ -31,7 +32,18 @@ function App() {
   console.log('current Category', currentCategory);
 
   const renderDifferentPages = () => {
-
+    switch(currentCategory) {
+      case 'about':
+        return <About />
+      case 'portfolio':
+        return <Portfolio />
+      case 'contact':
+        return <Contact />
+      case 'resume':
+        return <Resume />
+      default:
+        return <About />
+    }
   } 
 
   return (
@@ -40,14 +52,9 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Nav>
       <main>
-        {currentCategory === 'about' ? (
-          <>
-            <About></About>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
+        {renderDifferentPages() }
       </main>
+      <Footer/>
     </div>
   );
 }

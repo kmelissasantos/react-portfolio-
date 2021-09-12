@@ -54,3 +54,46 @@ header {
     font-weight: lighter;
     font-size: 1.55vw;
   }
+
+  .self-portrait {
+    height: 300px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  card-img {
+    height: 100px;
+    width: 200px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  footer {
+    background: var(--lightblue);
+    padding: 20px 35px;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  footer h2 {
+    font-size: 20px;
+    margin: 0;
+    color: var(--darkblue);
+  }
+  
