@@ -8,17 +8,6 @@ import Resume from './Pages/Resume/resume';
 import Footer from './Components/Footer/footer.js';
 
 
-// function App() {
-//   return (
-//     <>
-//       <Nav />
-//       <Contact />
-//     </>
-//   );
-// }
-
-// export default App;
-
 
 function App() {
   const [categories] = useState([
