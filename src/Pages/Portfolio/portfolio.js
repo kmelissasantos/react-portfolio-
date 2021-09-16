@@ -2,6 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Choovie from '../../Assets/images/choovie.png';
 import WorkDayScheduler from '../../Assets/images/workdayscheduler.png';
+import WhatchaEatin from '../../Assets/images/whatcha-eatin.png';
 
 export default function Portfolio() {
     return (
@@ -24,7 +25,7 @@ export default function Portfolio() {
             <Card.Body>
                 <Card.Title>Whatcha-Eatin</Card.Title>
                 <Card.Text>
-                An app to help you decide what to eat!
+                 An app to help you choose what to eat for dinner!
                 </Card.Text>
             </Card.Body>
             <Card.Body>
