@@ -21,19 +21,6 @@ export default function Portfolio() {
             </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={ WhatchaEatin } />
-            <Card.Body>
-                <Card.Title>Whatcha-Eatin</Card.Title>
-                <Card.Text>
-                 An app to help you choose what to eat for dinner!
-                </Card.Text>
-            </Card.Body>
-            <Card.Body>
-                    <Card.Link href="https://melissasantosportfolio.herokuapp.com/">Link to Deployed Site</Card.Link>
-                    <Card.Link href="https://github.com/kmelissasantos/react-portfolio-">Link to GitHub Repo</Card.Link>
-            </Card.Body>
-        </Card>
-        <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={ WorkDayScheduler } />
             <Card.Body>
                 <Card.Title>WorkDayScheduler</Card.Title>
@@ -44,6 +31,19 @@ export default function Portfolio() {
             <Card.Body>
                     <Card.Link href="https://github.com/kmelissasantos/Work-Day-Scheduler">Link to Deployed Site</Card.Link>
                     <Card.Link href="https://kmelissasantos.github.io/Work-Day-Scheduler/">Link to GitHub Repo</Card.Link>
+            </Card.Body>
+        </Card>
+        <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src={ WhatchaEatin } />
+            <Card.Body>
+                <Card.Title>Whatcha-Eatin</Card.Title>
+                <Card.Text>
+                 An app to help you choose what to eat for dinner!
+                </Card.Text>
+            </Card.Body>
+            <Card.Body>
+                    <Card.Link href="https://melissasantosportfolio.herokuapp.com/">Link to Deployed Site</Card.Link>
+                    <Card.Link href="https://github.com/kmelissasantos/react-portfolio-">Link to GitHub Repo</Card.Link>
             </Card.Body>
         </Card>
         </div>
